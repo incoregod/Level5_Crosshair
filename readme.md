@@ -19,4 +19,5 @@ Feel free to support us and check also all other scripts.
 https://lvl5-dev.tebex.io/
 
 
-DISCORD: https://discord.gg/4maCSRnkaS"# Level5_Crosshair" 
+DISCORD: https://discord.gg/4maCSRnkaS
+Level5_Crosshair
