@@ -34,9 +34,9 @@ export default function App() {
       {/* Settings panel */}
       {visible && (
         <div className="fixed inset-0 z-[10000] flex items-center justify-center">
-          <div className="relative flex max-h-[85vh] w-[380px] flex-col overflow-hidden rounded-xl border border-white/[0.06] bg-[#0a0e17]/95 shadow-2xl backdrop-blur-xl">
+          <div className="relative flex max-h-[85vh] w-[85vw] max-w-[480px] flex-col overflow-hidden rounded-xl border border-white/[0.06] bg-[#0a0e17]/95 shadow-2xl backdrop-blur-xl">
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-white/[0.06] px-4 py-3">
+            <div className="flex items-center justify-between border-b border-white/[0.06] px-5 py-3">
               <div className="flex items-center gap-2">
                 <span className="text-sm font-semibold text-slate-100">
                   Crosshair Customizer
@@ -58,7 +58,7 @@ export default function App() {
             </div>
 
             {/* Scrollable content */}
-            <div className="flex-1 overflow-y-auto p-4">
+            <div className="flex-1 overflow-x-hidden overflow-y-auto p-5">
               <div className="flex flex-col gap-4">
                 {/* Preview */}
                 <CrosshairPreview />
@@ -98,7 +98,7 @@ export default function App() {
             </div>
 
             {/* Footer */}
-            <div className="flex items-center justify-between border-t border-white/[0.06] px-4 py-3">
+            <div className="flex items-center justify-between border-t border-white/[0.06] px-5 py-4">
               <Button variant="danger" onClick={resetSettings}>
                 Reset
               </Button>

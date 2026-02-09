@@ -36,7 +36,7 @@ local function GetKVPJson(key)
 end
 
 local function SetKVPJson(key, value)
-    SetResourceKvpString(key, json.encode(value))
+    SetResourceKvp(key, json.encode(value))
 end
 
 -- Load all saved settings from KVP
@@ -63,7 +63,7 @@ local function LoadEnabled()
 end
 
 local function SaveEnabled(enabled)
-    SetResourceKvpString('crosshair:enabled', enabled and 'true' or 'false')
+    SetResourceKvp('crosshair:enabled', enabled and 'true' or 'false')
 end
 
 local function LoadDynamicEnabled()
@@ -73,7 +73,7 @@ local function LoadDynamicEnabled()
 end
 
 local function SaveDynamicEnabled(enabled)
-    SetResourceKvpString('crosshair:dynamic', enabled and 'true' or 'false')
+    SetResourceKvp('crosshair:dynamic', enabled and 'true' or 'false')
 end
 
 -- UI open/close
